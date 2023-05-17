@@ -98,3 +98,18 @@
 //     role: 'admin'
 // }
 // console.log(user1)
+
+// ------------------------------ class
+class User {
+    firstName: string;
+    lastName: string;
+
+    constructor(firstName: string, lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+}
+
+const user1 = new User('Abhishek', 'Kumar');
+console.log(user1);
+
