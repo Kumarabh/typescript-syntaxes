@@ -107,11 +107,11 @@
 
 import { Product } from "./types/dataTypes";
 
-// const productCode: ProductCode = 101;
-// const productName: ProductName = 'Product 01';
+const productCode: ProductCode = 101;
+const productName: ProductName = 'Product 01';
 
-// console.log(productCode)
-// console.log(productName);
+console.log(productCode)
+console.log(productName);
 
 const product: Product = {
   productCode: 11,
