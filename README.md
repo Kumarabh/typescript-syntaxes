@@ -136,16 +136,16 @@ console.log(product.getProductDetails());
 
  ---------dataTypes.ts
  
- // number
+
 export type ProductCode = number;
 
-// string
+
 export type ProductName = string;
 
-// boolean
+
 export type IsAvailable = boolean;
 
-//object
+
 export type Product = {
     productCode: ProductCode,
     productName: ProductName,
@@ -155,6 +155,9 @@ export type Product = {
     storeId: string,
     getProductDetails: () => Product
 }
+
+
+
 
 
 
