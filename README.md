@@ -98,3 +98,65 @@
      role: 'admin'
  }
  console.log(user1)
+ 
+ ----
+ 
+ ### EXAMPLE 1
+ 
+---------index.ts
+
+import { Product } from "./types/dataTypes";
+
+// const productCode: ProductCode = 101;
+// const productName: ProductName = 'Product 01';
+
+// console.log(productCode)
+// console.log(productName);
+
+const product: Product = {
+  productCode: 11,
+  productName: "Shoe",
+  isAvailable: true,
+  productDescription: "Adidas Shoe, Size-8",
+  price: 2300.50,
+  storeId: '900',
+  getProductDetails(){
+    return {
+      productCode: this.productCode, 
+      productName: this.productName, 
+      isAvailable: this.isAvailable, 
+      productDescription: this.productDescription, 
+      price: this.price, 
+      storeId: this.storeId
+    } as Product
+  }
+}
+
+console.log(product.getProductDetails());
+
+ ---------dataTypes.ts
+ 
+ // number
+export type ProductCode = number;
+
+// string
+export type ProductName = string;
+
+// boolean
+export type IsAvailable = boolean;
+
+//object
+export type Product = {
+    productCode: ProductCode,
+    productName: ProductName,
+    isAvailable: IsAvailable,
+    productDescription: string,
+    price: number,
+    storeId: string,
+    getProductDetails: () => Product
+}
+
+
+
+
+ 
